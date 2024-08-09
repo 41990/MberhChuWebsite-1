@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="../../static/styles/css/reviews.css">
     <link rel="stylesheet" href="../../static/styles/scss/_component-reviews.scss">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
     <script type="text/javascript" src="../../static/js/jquery/jquery-3.6.0.js"></script>
     <script type="text/javascript" src="../../static/js/jquery/jquery.min.js"></script>
-    <script async src="../../static/js/reviews.js"></script>
+    <script type="text/javascript" async src="../../static/js/reviews.js"></script>
 
     <title>Reviews</title>
 </head>
@@ -35,7 +36,7 @@
                 <img src="../../images/logos/newlogo2.png" alt="logo" class="logo d-block border-0" class="img-fluid">
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <button type="button" title="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -149,7 +150,7 @@
                             <label class="form-label text-success" for="names">Names</label>
                             <div class="d-flex">
                                 <div class="input-group mb-0" id="names-gp">
-                                    <button class="btn btn-success" id="basic-addon1">
+                                    <button type="button" title="names" class="btn btn-success" id="basic-addon1">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-person-fill" viewBox="0 0 16 16">
                                             <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0m2 5.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-.245S4 12 8 12s5 1.755 5 1.755"/>
                                           </svg>
@@ -162,7 +163,7 @@
                             <label for="email" class="form-label text-success">Email </label>
                             <div class="d-flex">
                                 <div class="input-group mb-0" id="email-gp">
-                                    <button type="button" class="btn btn-success" id="basic-addon2">
+                                    <button type="button" title="email" class="btn btn-success" id="basic-addon2">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-inbox-fill" viewBox="0 0 16 16">
                                             <path d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4zm-1.17-.437A1.5 1.5 0 0 1 4.98 3h6.04a1.5 1.5 0 0 1 1.17.563l3.7 4.625a.5.5 0 0 1 .106.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374z"/>
                                           </svg>
@@ -177,7 +178,7 @@
                             <label for="address" class="form-label text-success">Location/address </label>
                             <div class="d-flex">
                                 <div class="input-group mb-0" id="address-gp">
-                                    <button type="button" class="btn btn-success" id="basic-addon2">
+                                    <button type="button" title="address" class="btn btn-success" id="basic-addon2">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                                             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
                                         </svg>
@@ -198,7 +199,7 @@
                             </div>
                         </div>
                         <div class="mt-5 col-md-7 d-flex justify-content-end">
-                            <button type="submit" formtarget="_blank" name="Submit" class="btn btn-success quote-submit" value="Submit">Submit</button>
+                            <button type="submit" name="Submit" class="btn btn-success quote-submit" value="Submit">Submit</button>
                         </div>
                     </form>
                 </div>
