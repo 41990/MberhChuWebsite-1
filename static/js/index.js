@@ -140,6 +140,40 @@ async function persistReviews(){
     
 }
 
+function setAttrs(elt, attrs){
+    for(let attr in attrs)
+        elt.setAttribute(attr, attrs[attr]);
+}
+
+function appendElts(parent_elt, elts){
+    for(let i=0; i<elts.length; i++)
+        parent_elt.appendChild(elts[i]);
+}
+
+function getAccountImage(email){
+    // Usage example
+    const gravatarUrl = getGravatarUrl(email);
+    const iconUrl = '../../images/logos/team.png';
+
+    //verify if image exist
+    if( getGravatarUrl=='https://www.gravatar.com/avatar/37ca2574750e2af1c09ea650cc7406df' ){
+
+        return iconUrl;
+    }
+
+    console.log(gravatarUrl); // Gravatar URL
+
+    return gravatarUrl;
+
+}
+
+function getGravatarUrl(email) {
+    const emailEncrypt = CryptoJS.MD5(email.trim().toLowerCase()).toString();
+
+    return `https://www.gravatar.com/avatar/${emailEncrypt}`;
+}
+
+
 window.addEventListener('load',  function(){
     persistReviews();
 });
