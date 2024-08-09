@@ -54,7 +54,7 @@ function checkSlide (e){
 function makeReview(name, email, address, message, date, id){
 
     var card = document.createElement('div');
-    setAttrs(card, {'class':'card review-card w-100 mb-4 border border-bottom-0 border-success border-1 p-4', 'id':'review-card-'+id});
+    setAttrs(card, {'class':'card review-card w-75 mb-4 border border-bottom-0 border-success border-1 p-4', 'id':'review-card-'+id});
 
     var card_header = document.createElement('div');
     setAttrs(card_header, {'class':'row card-header', 'id':'card-header-id'});

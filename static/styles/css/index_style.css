@@ -98,3 +98,8 @@ body{
     -webkit-transition: transform 0.5s;
     transform: translateX(150%);
 }
+
+.review-card{
+    position: relative;
+    left: 12%;
+}
