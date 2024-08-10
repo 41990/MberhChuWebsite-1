@@ -54,7 +54,7 @@ function checkSlide (e){
 function makeReview(name, email, address, message, date, id){
 
     var card = document.createElement('div');
-    setAttrs(card, {'class':'card review-card w-75 mb-4 border border-bottom-0 border-success border-1 p-4', 'id':'review-card-'+id});
+    setAttrs(card, {'class':'card review-card w-50 mb-4 border border-bottom-0 border-success border-1 p-4', 'id':'review-card-'+id});
 
     var card_header = document.createElement('div');
     setAttrs(card_header, {'class':'row card-header', 'id':'card-header-id'});
@@ -65,7 +65,7 @@ function makeReview(name, email, address, message, date, id){
     var img = document.createElement('img');
     setAttrs(img, {
         'class':'left border rounded-circle', 
-        'src':getAccountImage(email),
+        'src':'',
         'alt':'Acc Img',
         'width':'70',
         'height':'70'
@@ -106,6 +106,15 @@ function makeReview(name, email, address, message, date, id){
 
     var review_section = document.getElementsByClassName('section-content')[0];
     review_section.appendChild(card);
+
+    // Example usage
+    checkGravatar(email).then(src => {
+        if (src) {
+            img.src = src;
+        } else {
+            img.src = "/MberhChu/MberhChuWebsite/images/logos/team.png";
+        }
+    });
 }
 
 async function persistReviews(){
@@ -122,9 +131,13 @@ async function persistReviews(){
                     data.data.forEach(review => {
                         console.log(`ID: ${review.id}, Name: ${review.names}, Email: ${review.email}, Address: ${review.addr}, Message: ${review.mesg}, Date: ${review.reg_date}`);
                     });
-                    data.data.forEach(review => {
+                    let l = data.data.length;
+                    for(let i=l-4; i<l; i++){
+                        makeReview(data.data[i].names, data.data[i].email, data.data[i].addr, data.data[i].mesg, data.data[i].reg_date, data.data[i].id);
+                    }
+                    /*data.data.forEach(review => {
                         makeReview(review.names, review.email, review.addr, review.mesg, review.reg_date, review.id);
-                    });
+                    });*/
                 }else {
                     console.log(data.message);
                 }
@@ -152,18 +165,15 @@ function appendElts(parent_elt, elts){
 
 function getAccountImage(email){
     // Usage example
-    const gravatarUrl = getGravatarUrl(email);
-    const iconUrl = '../../images/logos/team.png';
+    const gravatar = getGravatarUrl(email);
+    const iconUrl = '/MberhChu/MberhChuWebsite/images/logos/team.png';
 
     //verify if image exist
-    if( getGravatarUrl=='https://www.gravatar.com/avatar/37ca2574750e2af1c09ea650cc7406df' ){
-
+    if(gravatar==gravatar+'?d=404'){
         return iconUrl;
     }
 
-    console.log(gravatarUrl); // Gravatar URL
-
-    return gravatarUrl;
+    return gravatar;
 
 }
 
@@ -173,9 +183,36 @@ function getGravatarUrl(email) {
     return `https://www.gravatar.com/avatar/${emailEncrypt}`;
 }
 
+function checkGravatar(email) {
+    // Generate the MD5 hash of the email
+    const emailHash = CryptoJS.MD5(email.trim().toLowerCase());
+
+    // Gravatar URL with the 404 fallback
+    const gravatarUrl = `https://www.gravatar.com/avatar/${emailHash}?d=404`;
+
+    // Return a promise that resolves with the appropriate URL
+    return new Promise((resolve, reject) => {
+        const img = new Image();
+
+        img.onload = function() {
+            // Gravatar exists, resolve with the gravatar URL
+            resolve(`https://www.gravatar.com/avatar/${emailHash}`);
+        };
+
+        img.onerror = function() {
+            // No Gravatar found, resolve with a default image or null
+            resolve(null); // You can replace null with a default image URL if desired
+        };
+
+        img.src = gravatarUrl;
+    });
+}
+
 
 window.addEventListener('load',  function(){
     persistReviews();
 });
 
 window.addEventListener('scroll', debounce(checkSlide));
+
+

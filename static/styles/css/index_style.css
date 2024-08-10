@@ -101,5 +101,18 @@ body{
 
 .review-card{
     position: relative;
-    left: 12%;
+    left: 27%;
+}
+
+img.reviews-section{
+    width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(.4);
+}
+
+div.upper-frame{
+    position: relative;
+    top: 5%;
+    margin-top: -50%;
 }
