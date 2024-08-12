@@ -3,6 +3,15 @@ body{
     margin: 0;
     overflow-x: hidden;
     padding-top: 9%;
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar{
+    background-color: rgb(230, 230, 230);
+}
+
+.site-navbar{
+    background-color: rgb(255, 255, 255);
 }
 
 .logo-container:hover{
@@ -35,6 +44,10 @@ body{
 
 .bi-twitter-x:hover{
     color: rgb(0, 153, 230);
+}
+
+.submit-inq{
+    background-color: rgb(32, 96, 64);
 }
 
 .border-primary:hover{
@@ -108,7 +121,7 @@ img.reviews-section{
     width: 100vw;
   height: 100vh;
   object-fit: cover;
-  filter: brightness(.4);
+  filter: brightness(.8);
 }
 
 div.upper-frame{
@@ -116,3 +129,42 @@ div.upper-frame{
     top: 5%;
     margin-top: -50%;
 }
+
+.navbar-second{
+    position: fixed;
+    top: 9%;
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+.sticky-info{
+    background-color: rgb(64, 64, 64, 0.6);
+    width: 400px;
+    height: 300px;
+    top: 20%;
+    right: 0;
+    position: fixed;
+    padding: 20px 20px;
+}
+
+.sticky-head{
+    color: rgb(255, 255, 255, 0.7);
+    text-align: center;
+}
+
+.sticky-content-text{
+    margin-top: 5%;
+    color: rgb(255, 255, 255, 0.7);
+    text-align: center;
+
+}
+
+.sticky-content-btn{
+    position: relative;
+    left: 25%;
+    margin-top: 15%;
+    width: 50%;
+    padding: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
