@@ -4,6 +4,7 @@ body{
     overflow-x: hidden;
     padding-top: 9%;
     background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar{
@@ -55,11 +56,28 @@ body{
 }
 
 .blog-presentation{
-    background-color: rgb(179, 179, 179);
+    background-color: rgb(230, 230, 230);
+}
+
+#services-ca:hover{
+    color: #F4BC16 !important;
+    border: 1px solid #F4BC16 !important;
 }
 
 .quote-section{
     background-color: rgb(230, 230, 230);
+}
+
+.quote-section-cont{
+    padding-top: 55px;
+}
+
+.quote-cont{
+    background-color: rgb(32, 96, 64, 0.4);
+}
+
+.quote-mail{
+    background-color: rgb(255, 255, 255, 0.1);
 }
 
 .quote-submit:hover{
@@ -117,17 +135,19 @@ body{
     left: 27%;
 }
 
-img.reviews-section{
-    width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  filter: brightness(.8);
+.visitor-reactions{
+    background-color: black;
+    background-image: url("/MberhChu/MberhChuWebsite/images/logistics/1600x1200-The-Different-Modes-of-Transportation-Header-e1645547707423.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgb(38, 38, 38, 0.6);
+    background-blend-mode: multiply;
 }
 
 div.upper-frame{
-    position: relative;
-    top: 5%;
-    margin-top: -50%;
+    width: 100%;
 }
 
 .navbar-second{
@@ -166,5 +186,176 @@ div.upper-frame{
     padding: 4px;
     text-transform: uppercase;
     font-weight: bold;
+    color:rgb(255, 255, 255, 0.7);
 }
 
+.projects-list{
+    width: 100%;
+    transition: all 0.4s ease 0s;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+}
+
+.page-margin-top{
+    margin-top: 50px;
+}
+
+.projects-list li{
+    position: relative;
+    float: left;
+    width: 25%;
+    overflow: hidden;
+}
+
+ol, ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.projects-list li img{
+    width: 100%;
+}
+
+a img{
+    display: block;
+    transition: opacity 0.3s ease 0s;
+    opacity: 1;
+    max-width: 100%;
+    height: auto;
+}
+
+.projects-list li .view{
+    position: absolute;
+    top: 0;
+    background: rgba(38, 38, 40, 0.5);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+}
+
+.align-center{
+    text-align: center;
+}
+
+.projects-list li .view .vertical-align-table{
+    width: 100%;
+    height: 100%;
+}
+
+.vertical-align-table{
+    display: table;
+}
+
+.vertical-align-cell{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.projects-list li .view p.description{
+    color: #FFF;
+    margin-top: -20px;
+    margin-bottom: 55px;
+    font-size: 14px;
+    line-height: 24px;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+}
+
+p.description{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 0;
+    margin-top: 34px;
+}
+
+.more.simple{
+    background: transparent;
+    color: #FFF;
+    border: 1px solid #E2E6E7;
+    padding: 17px 24px 16px;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+}
+
+.more, .more[type="submit"]{
+    color: #FFF;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    background: #F4BC16;
+    padding: 16px 23px 15px;
+    text-align: center;
+    cursor: pointer;
+    line-height: normal;
+    letter-spacing: 1px;
+    border-radius: 999px;
+    -moz-border-radius: 999px;
+    -webkit-border-radius: 999px;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    border: 2px solid #F4BC16;
+}
+
+h2.box-header{
+    text-align: center;
+    font-size: 27px;
+    line-height: 47px;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.more:hover
+{
+	color: #000;	
+	background: transparent;
+	opacity: 1;
+}
+.more.simple
+{
+	background: transparent;
+	color: #FFF;
+	border: 1px solid #E2E6E7;
+	padding: 17px 24px 16px;
+	transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+}
+.more.simple:hover
+{
+	border-color: #F4BC16;
+	background: #F4BC16;
+}
+
+h2.box-header:after{
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.box-header:after{
+    display: block;
+    content: "";
+    background-color: rgb(32, 96, 64, 0.4);
+    width: 40px;
+    height: 2px;
+    margin-top: 13px;
+}
+
+.desc-text-cont{
+    width: 870px;
+    margin-left: auto;
+    margin-right: auto;
+}
