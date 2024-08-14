@@ -132,7 +132,7 @@ body{
 
 .review-card{
     position: relative;
-    left: 27%;
+    left: 25%;
 }
 
 .visitor-reactions{
@@ -338,7 +338,7 @@ h2.box-header{
 	background: #F4BC16;
 }
 
-h2.box-header:after{
+h2.box-header:after, h4.box-header:after{
     width: 80px;
     margin-left: auto;
     margin-right: auto;
