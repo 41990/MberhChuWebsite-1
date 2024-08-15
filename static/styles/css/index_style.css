@@ -205,6 +205,7 @@ div.upper-frame{
     float: left;
     width: 25%;
     overflow: hidden;
+    padding: 0;
 }
 
 ol, ul{
@@ -213,8 +214,12 @@ ol, ul{
     margin: 0;
 }
 
-.projects-list li img{
+.projects-list li a img{
     width: 100%;
+}
+
+.projects-list li a {
+    text-decoration: none;
 }
 
 a img{
@@ -235,6 +240,10 @@ a img{
     transition: all 0.3s ease 0s;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
+}
+
+.projects-list li .view:hover{
+    opacity: 1.0;
 }
 
 .align-center{
