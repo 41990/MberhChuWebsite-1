@@ -139,9 +139,9 @@
     </nav>
 
     <!--showcase-->
-    <section class="bg-light text-light p-5 text-center" id="blog-showcase">
-        <div class="container">
-            <div>
+    <section class="bg-light text-light py-2 text-center" id="blog-showcase">
+        <div class="container-fluid">
+            <div class="w-100">
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -150,32 +150,32 @@
                       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
                     </div>
                     <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="images/constructions/mordern-internal-design001.jpg" class="d-block w-100 img-fluid" alt="slide1">
+                      <div class="carousel-item active" style="height: 590px;">
+                        <img src="images/constructions/mordern-internal-design001.jpg" class="d-block w-100 " alt="slide1" style="height: 100%;">
                         <div class="carousel-caption d-none d-md-block ">
-                          <h5>First slide label</h5>
-                          <p>Some representative placeholder content for the first slide.</p>
+                          <h4 class="slide-header">First slide label</h4>
+                          <p class="description text-warning">Some representative placeholder content for the first slide.</p>
                         </div>
                       </div>
-                      <div class="carousel-item">
-                        <img src="images/constructions/modern-internal-design002.jpg" class="d-block w-100  img-fluid" alt="slide2">
+                      <div class="carousel-item" style="height: 590px;">
+                        <img src="images/constructions/modern-internal-design002.jpg" class="d-block w-100  " alt="slide2" style="height: 100%;">
                         <div class="carousel-caption d-none d-md-block ">
-                          <h5>Second slide label</h5>
-                          <p>Some representative placeholder content for the second slide.</p>
+                          <h4 class="slide-header">Second slide label</h4>
+                          <p class="description text-warning">Some representative placeholder content for the second slide.</p>
                         </div>
                       </div>
-                      <div class="carousel-item">
-                        <img src="images/logistics/packed-loading-truck001.jpg" class="d-block w-100  img-fluid" alt="slide3">
+                      <div class="carousel-item" style="height: 590px;">
+                        <img src="images/logistics/packed-loading-truck001.jpg" class="d-block w-100  " alt="slide3" style="height: 100%;">
                         <div class="carousel-caption d-none d-md-block ">
-                          <h5>Third slide label</h5>
-                          <p>Some representative placeholder content for the third slide.</p>
+                          <h4 class="slide-header">Third slide label</h4>
+                          <p class="description text-warning">Some representative placeholder content for the third slide.</p>
                         </div>
                       </div>
-                      <div class="carousel-item">
-                        <img src="images/logistics/logistics001.jpg" class="d-block w-100  img-fluid" alt="slide2">
+                      <div class="carousel-item" style="height: 590px;">
+                        <img src="images/logistics/logistics001.jpg" class="d-block w-100  " alt="slide2" style="height: 100%;">
                         <div class="carousel-caption d-none d-md-block ">
-                          <h5>Second slide label</h5>
-                          <p>Some representative placeholder content for the second slide.</p>
+                          <h4 class="slide-header">Second slide label</h4>
+                          <p class="description text-warning">Some representative placeholder content for the second slide.</p>
                         </div>
                       </div>
                     </div>
@@ -197,30 +197,28 @@
     <section class="p-5 blog-presentation" id="blog-presentation">
         <div class="container d-flex flex-column">
             <div class="d-flex flex-column  mb-5 desc-text-cont" >
-                <h4 class="box-header align-center text-capitalize text-dark">Our Services</h4>
-                <p class="description align-center" style="background-image: url('images/logos/logo05.png'); background-repeat: no-repeat; background-position: 50% 50%; height: 100px;">With over 15 years experience and real focus on customer satisfaction, you can rely on us for your next renovation,
-                    driveway sett or home repair. We provide a professional service for private and commercial customers.</p>
+                <h2 class="box-header align-center text-capitalize text-dark">Our Services</h2>
+                <p class="description align-center" style="background-image: url('images/logos/logo05.png'); background-repeat: no-repeat; background-position: 50% 50%; height: 100px;">With over 15 years experience and real focus on customer satisfaction, you can rely on us for your next building construction prouject,
+                    port clearance or magasin loading and offloading. We provide a professional service for private and commercial customers.</p>
             </div>
             
             <div class="row text-center card-group slide-in align-top" id="blog-card-group">
                 
-                    <div class="card text-dark ps-0 pe-0">
+                    <div class=" col-md-3 d-flex flex-column text-dark ps-0 pe-0">
                         <div class="card-header">
-                            <div class="card-image mb-4 ">
-                                <img src="images/logistics/port3.jpg" alt="port-logistics02" class="card-item img-thumbnail border-0">
+                            <div class="card-image mb-2 ">
+                                <img src="images/logistics/tran-prj-8.jpg" alt="port-logistics02" height="200" width="300" class="card-item border-0">
                             </div>
                         </div>
                         <div class="card-body text-center p-0">
-                            <div class="p-2">
-                                <h3 class="card-title">
-                                    blog post A
-                                </h3>
+                            <div class="p-0 mt-4">
+                                <h4 class="box-header card-title">
+                                    Port Clearing
+                                </h4>
                             </div>
-                            <div class="p-2">
-                                <p class="card-text text-success">
-                                    describing blog post A
-                                </p>
-                            </div>
+                            <p class="description align-center text-success">
+                                We take charge of clearing your goods and supplies from the port and transport to your convinient location in time.
+                            </p>
                             <div class="p-2 text-center">
                                 <a href="#blog-post-A" class="btn btn-light border border-1 border-success text-capitalize">
                                     read more
@@ -230,23 +228,21 @@
                     </div>
                 
                 
-                    <div class="card bg-light text-dark ps-0 pe-0">
+                    <div class="col-md-3 d-flex flex-column text-dark ps-0 pe-0">
                         <div class="card-header">
-                            <div class="card-image mb-5">
-                                <img src="images/constructions/view001.jpg" alt="internal-design01" class="card-item  border-0">
+                            <div class="card-image mb-2">
+                                <img src="images/logistics/tran-prj-9.jpg" height="200" width="300" alt="internal-design01" class="card-item  border-0">
                             </div>
                         </div>
                         <div class="card-body text-center p-0">
-                            <div class="p-2">
-                                <h3 class="card-title">
-                                    blog post B
-                                </h3>
+                            <div class="p-0 mt-4">
+                                <h4 class="box-header card-title">
+                                    Port Loading
+                                </h4>
                             </div>
-                            <div class="p-2">
-                                <p class="card-text text-success">
-                                    describing blog post B
-                                </p>
-                            </div>
+                            <p class="description align-center text-success">
+                                We offer quality loading and transportation services, so you wont border about irregularities involved.
+                            </p>
                             <div class="p-2 text-center">
                                 <a href="#blog-post-B" class="btn btn-light border border-1 border-success text-capitalize">
                                     read more
@@ -256,23 +252,21 @@
                     </div>
                 
                 
-                    <div class="card bg-light text-dark ps-0 pe-0">
+                    <div class="col-md-3 d-flex flex-column text-dark ps-0 pe-0">
                         <div class="card-header">
-                            <div class="card-image mb-5">
-                                <img src="images/logistics/port-trucks001.jpg" alt="port-logistics01" class="card-item img-thumbnail border-0">
+                            <div class="card-image mb-2">
+                                <img src="images/constructions/cons-prj-4.jpg" height="200" width="300" alt="port-logistics01" class="card-item  border-0">
                             </div>
                         </div>
                         <div class="card-body text-center p-0">
-                            <div class="p-2">
-                                <h3 class="card-title">
-                                    blog post C
-                                </h3>
+                            <div class="p-0 mt-4">
+                                <h4 class="box-header card-title">
+                                    House Construction
+                                </h4>
                             </div>
-                            <div class="p-2">
-                                <p class="card-text text-success">
-                                    describing blog post C
-                                </p>
-                            </div>
+                            <p class="description align-center text-success px-2">
+                                We supply the best and standard prorfessional house construction technicians, who deliver standards in time.
+                            </p>
                             <div class="p-2 text-center">
                                 <a href="#blog-post-C" class="btn btn-light border border-1 border-success text-capitalize">
                                     read more
@@ -282,23 +276,21 @@
                     </div>
                 
                 
-                    <div class="card bg-light text-dark ps-0 pe-0">
+                    <div class="col-md-3 d-flex flex-column text-dark ps-0 pe-0">
                         <div class="card-header">
-                            <div class="card-image mb-5">
-                                <img src="images/constructions/house3.jpg" alt="external-design01" class="card-item img-thumbnail border-0">
+                            <div class="card-image mb-2">
+                                <img src="images/constructions/cons-prj-12.jpg" height="200" width="300" alt="external-design01" class="card-item  border-0">
                             </div>
                         </div>
                         <div class="card-body text-center p-0">
-                            <div class="p-2">
-                                <h3 class="card-title">
-                                    blog post D
-                                </h3>
+                            <div class="p-0 mt-4">
+                                <h4 class="box-header card-title">
+                                    Civil Construction
+                                </h4>
                             </div>
-                            <div class="p-2">
-                                <p class="card-text text-success">
-                                    describing blog post D
-                                </p>
-                            </div>
+                            <p class="description align-center text-success px-2">
+                                From initial design and project specification to archieving a high end and classic finished constructions.
+                            </p>
                             <div class="p-2 text-center">
                                 <a href="#blog-post-D" class="btn btn-light border border-1 border-success text-capitalize">
                                     read more
@@ -547,7 +539,7 @@
     <!--sticky info-->
     <div class="container sticky-info d-flex flex-column">
         <div class="sticky-head border-bottom border-1 border-white">
-            <span class="sticky-head-span"><h4>HOME IMPROVEMENTS AND REMODELING</h4></span>
+            <span class="sticky-head-span"><h4>MBERHCHU'S LOGISTICS AND CONSTRUCTIONS SERVICES</h4></span>
         </div>
         <div class="sticky-content d-flex flex-column">
             <span class="sticky-content-text">We combine quality workmanship, superior knowledge and low prices to provide you with service unmatched by our competitors.</span>
