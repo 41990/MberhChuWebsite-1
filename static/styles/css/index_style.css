@@ -25,6 +25,10 @@ body{
     color: white;
 }
 
+.slide-description{
+    background-color: rgba(38, 38, 40, 0.5);;
+}
+
 .text-uppercase:active{
     text-decoration: overline;
     font-weight: bold;
