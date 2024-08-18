@@ -3,6 +3,12 @@ body{
     margin: 0;
     overflow-x: hidden;
     padding-top: 9%;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+  background-color: rgb(230, 230, 230);
 }
 
 .logo-container:hover{
@@ -21,6 +27,16 @@ body{
     color: white;
 }
 
+div.upper-frame{
+  width: 100%;
+}
+
+.navbar-second{
+  position: fixed;
+  top: 9%;
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
 .bi-linkedin:hover{
     color: rgb(0, 153, 230);
 }
@@ -37,8 +53,45 @@ body{
     color: rgb(0, 153, 230);
 }
 
+.submit-inq{
+  background-color: rgb(32, 96, 64);
+}
+
 .border-primary:hover{
     border: 0 solid grey;
+}
+
+.sticky-info{
+  background-color: rgb(64, 64, 64, 0.6);
+  width: 400px;
+  height: 300px;
+  top: 20%;
+  right: 0;
+  position: fixed;
+  padding: 20px 20px;
+}
+
+.sticky-head{
+  color: rgb(255, 255, 255, 0.7);
+  text-align: center;
+}
+
+.sticky-content-text{
+  margin-top: 5%;
+  color: rgb(255, 255, 255, 0.7);
+  text-align: center;
+
+}
+
+.sticky-content-btn{
+  position: relative;
+  left: 25%;
+  margin-top: 15%;
+  width: 50%;
+  padding: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color:rgb(255, 255, 255, 0.7);
 }
 
 /* Popup container - can be anything you want */
@@ -109,3 +162,46 @@ body{
     position: relative;
     left: 12%;
   }
+
+  .links-drop {
+    position: relative;
+    display: inline-block;
+  }
+
+.links-drop-cont {
+    display: none;
+    position: absolute;
+    bottom: 160px;
+    background-color: rgba(38, 38, 40, 0.5);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.links-drop-cont a.links-drop-item {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.links-drop-cont a.links-drop-item:hover {background-color: rgba(38, 38, 40, 0.7)}
+
+.links-drop-cont a.links-drop-item:after{
+    display: block;
+    content: "";
+    background-color: rgb(255, 255, 26, 0.8);
+    width: 150px;
+    height: 2px;
+    margin-top: 2px;
+}
+
+  /* Show the dropup menu on hover */
+.links-drop:hover .links-drop-cont {
+    display: block;
+}
+  
+  /* Change the background color of the dropup button when the dropup content is shown */
+.links-drop:hover .links-drop-btn {
+    background-color: rgba(38, 38, 40, 0.5);
+}

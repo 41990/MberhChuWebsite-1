@@ -279,3 +279,17 @@ async function persistReviews(){
     }
     
 }
+
+var prevScrollpos = document.getElementsByClassName('main-navbar')[0].scrollHeight;
+
+window.onscroll = function() {
+    var currentScrollPos = window.scrollY;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementsByClassName("navbar-second")[0].style.top = "9%";
+    } 
+    else if(currentScrollPos > prevScrollpos){
+        document.getElementsByClassName("navbar-second")[0].style.top = "-20%";
+    }
+    
+}
+
